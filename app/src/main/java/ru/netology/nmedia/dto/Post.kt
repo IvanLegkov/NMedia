@@ -1,4 +1,4 @@
-package ru.netology.nmedia
+package ru.netology.nmedia.dto
 
 import androidx.annotation.DrawableRes
 
@@ -8,8 +8,8 @@ data class Post(
     @DrawableRes val authorAvatar: Int,
     val published: String,
     val content: String,
-    var likes: Int = 0,
-    var likedByMe: Boolean = false,
-    var reposts: Int = 0,
-    var views: Int = 0,
+    val likes: Int = 0,
+    val likedByMe: Boolean = false,
+    val reposts: Int = 0,
+    val views: Int = 0,
 )
